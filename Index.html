@@ -2,91 +2,148 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artificial Genius Intelligence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artificial Genius Intelligence (AGI²)</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- Social preview -->
+  <meta property="og:title" content="Artificial Genius Intelligence (AGI²)" />
+  <meta property="og:description" content="A network of slow-clock, energy-efficient specialist machine geniuses measured by Joules per Discovery." />
+  <meta property="og:image" content="banner.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <style>
-    body {
-      margin: 0;
+    :root{
+      --bg:#0b0c10;
+      --fg:#e6e6e6;
+      --muted:#c5c6c7;
+      --teal:#66fcf1;
+      --teal2:#45a29e;
+      --panel:#1f2833;
+    }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0; padding:0; background:var(--bg); color:var(--fg);
       font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #0b0c10;
-      color: #e6e6e6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 2rem;
+      line-height:1.6;
     }
-    h1 {
-      font-size: 2.8rem;
-      color: #66fcf1;
-      margin-bottom: 0.4em;
+    a{color:var(--teal2); text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    /* Header / Hero */
+    .hero{width:100%; background:#000; display:flex; align-items:center; justify-content:center}
+    .hero img{width:100%; max-width:1920px; height:auto; display:block; border-bottom:2px solid var(--teal2); box-shadow:0 0 20px rgba(69,162,158,.35)}
+    .wrap{max-width:1100px; margin:0 auto; padding:2rem 1.25rem}
+    .topbar{display:flex; align-items:center; justify-content:space-between; padding:0.75rem 1.25rem; border-bottom:1px solid var(--panel); background:rgba(11,12,16,0.6); backdrop-filter:saturate(120%) blur(4px); position:sticky; top:0; z-index:10}
+    .brand{font-weight:700; letter-spacing:.3px; color:var(--teal)}
+    .nav a{margin-left:1rem}
+
+    /* Summary panel */
+    .agi-summary{
+      max-width:850px; margin:2rem auto; padding:2rem;
+      background:var(--bg); border:1px solid var(--panel); border-radius:10px;
+      box-shadow:0 0 25px rgba(69,162,158,.18);
     }
-    h2 {
-      font-weight: 400;
-      font-size: 1.3rem;
-      color: #c5c6c7;
-      margin-top: 0;
+    .agi-summary h1{color:var(--teal); font-size:2.2rem; margin:.2rem 0 .3rem}
+    .agi-summary h2{color:var(--muted); font-weight:400; font-size:1.25rem; margin:.2rem 0 1.2rem}
+    .agi-summary p, .agi-summary li{font-size:1.05rem}
+    .agi-summary strong{color:var(--teal)}
+    .agi-summary em{color:var(--teal2)}
+    .agi-summary ul{margin:1rem 0 1.5rem; padding-left:1.2rem; list-style:disc}
+
+    /* CTA buttons */
+    .cta-row{display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1rem}
+    .btn{
+      display:inline-block; padding:.8rem 1.1rem; border-radius:8px;
+      border:1px solid var(--teal2); background:transparent; color:var(--fg);
+      text-decoration:none; font-weight:600; letter-spacing:.2px;
+      box-shadow:0 0 10px rgba(69,162,158,.15);
+      transition:transform .08s ease, box-shadow .2s ease, background .2s ease;
     }
-    p {
-      max-width: 680px;
-      line-height: 1.6;
-      margin: 1rem auto;
-    }
-    .divider {
-      width: 80px;
-      height: 2px;
-      background: #45a29e;
-      margin: 1.5rem auto;
-    }
-    footer {
-      font-size: 0.9rem;
-      color: #8e9a9a;
-      margin-top: 2rem;
-    }
-    a {
-      color: #45a29e;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+    .btn:hover{transform:translateY(-1px); box-shadow:0 6px 16px rgba(69,162,158,.25)}
+    .btn.primary{background:linear-gradient(135deg, rgba(102,252,241,.12), rgba(69,162,158,.12)); border-color:var(--teal)}
+    .btn.primary:hover{background:linear-gradient(135deg, rgba(102,252,241,.18), rgba(69,162,158,.18))}
+
+    /* Footer */
+    footer{border-top:1px solid var(--panel); margin-top:2.5rem; padding:2rem 1.25rem; color:var(--muted); text-align:center}
+
+    /* Responsive */
+    @media (max-width:640px){
+      .agi-summary h1{font-size:1.8rem}
+      .agi-summary h2{font-size:1.05rem}
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Artificial Genius Intelligence</h1>
-    <h2>Energy-Bound Discovery • Many Minds • Real Progress</h2>
-    <div class="divider"></div>
 
-    <p>
-      <strong>Artificial Genius Intelligence (AGI²)</strong> is a new vision for machine intelligence:
-      not one all-knowing system, but a network of slow-clock, energy-efficient <em>specialist geniuses</em> —
-      each focused deeply on a single domain, working together to produce verified, high-impact discoveries.
-    </p>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="brand">Artificial Genius Intelligence (AGI²)</div>
+    <nav class="nav">
+      <a href="#summary">Concept</a>
+      <a href="agi2_whitepaper.pdf">White Paper</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 
-    <p>
-      Instead of measuring success by raw compute, AGI² is optimized for
-      <strong>Joules per Discovery</strong> — how efficiently knowledge and progress emerge
-      from the energy we invest.
-    </p>
+  <!-- Hero Banner -->
+  <header class="hero">
+    <!-- Place banner.png in the same folder -->
+    <img src="banner.png" alt="Artificial Genius Intelligence Banner" />
+  </header>
 
-    <p>
-      This site will grow into a home for research papers, diagrams, and discussions
-      on distributed genius architectures, neuromorphic design, and sustainable
-      artificial creativity.
-    </p>
+  <main class="wrap">
+    <!-- Summary Section -->
+    <section id="summary" class="agi-summary">
+      <h1>Artificial Genius Intelligence (AGI²)</h1>
+      <h2>Energy-Bound Discovery for the Next Leap in Human Progress</h2>
 
-    <p>
-      For early contact or collaboration inquiries, reach out at
-      <a href="mailto:info@artificialgeniusintelligence.com">info@artificialgeniusintelligence.com</a>
-      (or your preferred address).
-    </p>
+      <p>
+        Human history shows that the vast majority of intellectual energy has gone toward ordinary tasks, while only a handful of exceptional minds—Einstein, Maxwell, Curie, Newton—produced the breakthroughs that redefined civilization.
+        <strong>Artificial Genius Intelligence (AGI²)</strong> takes inspiration from this reality. Rather than pursuing one massive, all-powerful Artificial General Intelligence, AGI² envisions a distributed network of
+        <em>specialized, slow-clock, energy-efficient artificial geniuses</em>—each devoted to a single domain of deep inquiry.
+      </p>
 
-    <footer>
-      © 2025 Artificial Genius Intelligence • Concept &amp; Research by Joe R. Noles
-    </footer>
+      <p>
+        AGI² systems are designed to <strong>think like scientists, not servers</strong>. They operate continuously at modest power, refining hypotheses, testing simulations, and collaborating asynchronously with other artificial geniuses through a shared “blackboard” of ideas and proofs. Each agent is judged not by raw speed or token throughput, but by its efficiency in producing verified new knowledge—measured by a new performance metric:
+        <strong>Joules per Discovery (J/D)</strong>.
+      </p>
+
+      <p>This shift from <em>compute-per-second</em> to <em>discovery-per-joule</em> changes everything:</p>
+      <ul>
+        <li><strong>Sustainability:</strong> Aligns AI progress with global energy goals—world-class research on local power budgets.</li>
+        <li><strong>Safety:</strong> Hundreds of independent, specialized minds are more transparent and controllable than one opaque monolith.</li>
+        <li><strong>Innovation:</strong> Energy focuses on ideas that advance science, not on endless data throughput.</li>
+      </ul>
+
+      <p>
+        The long-term vision is a <strong>society of machine geniuses</strong>—super-Einsteins, super-Curies, super-Darwins—each exploring different frontiers while sharing validated insights through secure, verifiable channels. Together they form an ecosystem that can tackle humanity’s hardest problems—clean energy, climate modeling, advanced materials, medicine, and fundamental physics—without requiring planet-scale energy or risking runaway behavior.
+      </p>
+
+      <p>
+        <strong>Artificial Genius Intelligence</strong> is not about replacing humanity; it is about multiplying the kind of intelligence that has always defined humanity at its best.
+        By trading speed for insight, and brute force for elegance, AGI² seeks to rediscover what made human genius so powerful—and scale it sustainably for the next century of discovery.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn primary" href="agi2_whitepaper.pdf">⬇ Download White Paper (PDF)</a>
+        <a class="btn" href="#contact">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="agi-summary" style="max-width:700px">
+      <h2 style="margin-top:0">Contact</h2>
+      <p>Interested in collaborating, funding, or piloting an AGI² specialist?</p>
+      <p>Email: <a href="mailto:info@artificialgeniusintelligence.com">info@artificialgeniusintelligence.com</a></p>
+    </section>
   </main>
+
+  <footer>
+    © 2025 Artificial Genius Intelligence • Concept & Research by Joe R. Noles
+  </footer>
 </body>
 </html>
