@@ -17,6 +17,5 @@ The long-term vision is a **society of machine geniuses**—super-Einsteins, sup
 **Artificial Genius Intelligence** is not about replacing humanity; it is about multiplying the kind of intelligence that has always defined humanity at its best. By trading speed for insight and brute force for elegance, AGⁿI seeks to rediscover what made human genius so powerful—and scale it sustainably for the next century of discovery.
 
 ---
-
-📄 **White Paper:** [Download PDF](agi2_whitepaper.pdf)  
+📄 **White Paper:** [Download PDF](AGnI_White_Paper.pdf)  
 🌐 **Website:** [https://artificialgeniusintelligence.com](https://artificialgeniusintelligence.com)
