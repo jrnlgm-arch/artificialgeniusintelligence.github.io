@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AGⁿI Simulator</title>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <meta name="theme-color" content="#0b0c10" />
+
+  <style>
+    :root{
+      --bg:#0b0c10; --fg:#e6e6e6; --muted:#c5c6c7; --teal:#66fcf1; --teal2:#45a29e; --panel:#1f2833;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:"Segoe UI", Roboto, Helvetica, Arial, sans-serif;line-height:1.6}
+    a{color:var(--teal2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:.75rem 1.25rem;border-bottom:1px solid var(--panel);background:rgba(11,12,16,0.6);backdrop-filter:saturate(120%) blur(4px);position:sticky;top:0;z-index:10}
+    .brand{font-weight:700;letter-spacing:.3px;color:var(--teal)}
+    .nav a{margin-left:1rem}
+    .wrap{max-width:1100px;margin:0 auto;padding:2rem 1.25rem}
+
+    .card{max-width:1000px;margin:1rem auto;padding:1.25rem;border:1px solid var(--panel);border-radius:12px;box-shadow:0 0 25px rgba(69,162,158,.18)}
+    .card h1{color:var(--teal);margin:.2rem 0 .6rem}
+    .muted{color:var(--muted)}
+
+    /* responsive iframe */
+    .iframe-wrap{position:relative;width:100%;padding-top:56.25%;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.18);background:#fff}
+    .iframe-wrap iframe{position:absolute;inset:0;border:0;width:100%;height:100%;}
+
+    .back{display:inline-block;margin-top:1rem;padding:.6rem .9rem;border-radius:8px;border:1px solid var(--teal2)}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand"><a href="/">Artificial Genius Intelligence (AGⁿI)</a></div>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/whitepaper.html">White Paper</a>
+    </nav>
+  </div>
+
+  <main class="wrap">
+    <section class="card">
+      <h1>AGⁿI Simulator (Live)</h1>
+      <p class="muted">This runs the Replit-hosted demo inside a secure sandbox. If your browser blocks embeds, use the direct link below.</p>
+
+      <div class="iframe-wrap">
+        <iframe
+          src="https://artificial-genius-jrnlgm.replit.app/"
+          title="AGnI Simulator"
+          loading="lazy"
+          allow="clipboard-read; clipboard-write"
+          sandbox="allow-scripts allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-downloads allow-same-origin"
+        ></iframe>
+      </div>
+
+      <p style="margin:.8rem 0 0">Having trouble? <a href="https://artificial-genius-jrnlgm.replit.app/" target="_blank" rel="noopener">Open the simulator in a new tab</a>.</p>
+      <a class="back" href="/">← Back to Home</a>
+    </section>
+  </main>
+
+  <footer style="border-top:1px solid var(--panel);padding:2rem 1.25rem;color:var(--muted);text-align:center">
+    © 2025 Artificial Genius Intelligence • Simulator
+  </footer>
+</body>
+</html>
