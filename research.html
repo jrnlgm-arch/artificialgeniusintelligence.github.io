@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AGⁿI — Research & Whitepapers</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <style>
+    :root{--bg:#0b0c10;--fg:#e6e6e6;--muted:#c5c6c7;--teal:#66fcf1;--teal2:#45a29e;--panel:#1f2833}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);
+      font-family:"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+    a{color:var(--teal2);text-decoration:none} a:hover{text-decoration:underline}
+    .topbar{display:flex;align-items:center;justify-content:space-between;
+      padding:.75rem 1.25rem;border-bottom:1px solid var(--panel);
+      background:rgba(11,12,16,.6);backdrop-filter:saturate(120%) blur(4px);position:sticky;top:0;z-index:10}
+    .brand{font-weight:700;letter-spacing:.3px;color:var(--teal)}
+    .nav a{margin-left:1rem}
+    .wrap{max-width:1100px;margin:0 auto;padding:2rem 1.25rem}
+    h1{color:var(--teal);margin:.2rem 0 1rem}
+    .intro{color:var(--muted);max-width:900px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;margin-top:1.5rem}
+    .card{border:1px solid var(--panel);border-radius:12px;padding:1rem;background:var(--bg);box-shadow:0 0 25px rgba(69,162,158,.12)}
+    .badge{display:inline-block;font-size:.75rem;padding:.15rem .5rem;border:1px solid var(--teal2);border-radius:999px;color:var(--muted);margin-bottom:.5rem}
+    .title{font-weight:700;margin:.3rem 0}
+    .meta{color:var(--muted);font-size:.9rem;margin:.25rem 0 .6rem}
+    .links{display:flex;gap:.6rem;flex-wrap:wrap}
+    .btn{display:inline-block;padding:.5rem .75rem;border-radius:8px;border:1px solid var(--teal2);color:var(--fg);text-decoration:none;font-weight:600;letter-spacing:.2px}
+    .btn:hover{box-shadow:0 6px 16px rgba(69,162,158,.2)}
+    footer{border-top:1px solid var(--panel);margin-top:2.5rem;padding:2rem 1.25rem;color:var(--muted);text-align:center}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="brand"><a href="index.html" style="color:var(--teal);text-decoration:none">Artificial Genius Intelligence (AG&#8319;I)</a></div>
+    <nav class="nav">
+      <a href="index.html#summary">Concept</a>
+      <a href="whitepaper.html">White Paper</a>
+      <a href="simulation.html">Simulator</a>
+      <a href="research.html">Research</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+
+  <main class="wrap">
+    <h1>Research & Whitepapers</h1>
+    <p class="intro">A curated archive of AGⁿI research outputs: whitepapers, technical notes, and working reports.</p>
+
+    <section style="margin-top:1.5rem">
+      <span class="badge">Featured</span>
+      <div class="grid">
+        <article class="card">
+          <div class="title">Robots and the Age of Abundance — Integration of Vision and Constraint (2035–2045)</div>
+          <div class="meta">Whitepaper • Oct 29, 2025 • PDF</div>
+          <p style="margin:.5rem 0 1rem">Final integrated draft outlining energy-bound, slow-clock architecture and transition constraints.</p>
+          <div class="links">
+            <a class="btn" href="AGnI_White_Paper.pdf" target="_blank" rel="noopener">View PDF</a>
+            <a class="btn" href="whitepaper.html">Read HTML</a>
+          </div>
+        </article>
+
+        <!-- Duplicate this <article> block for each new paper -->
+        <!--
+        <article class="card">
+          <div class="title">Paper Title Here</div>
+          <div class="meta">Type • Month YYYY • PDF/HTML</div>
+          <p>1–2 sentence description.</p>
+          <div class="links">
+            <a class="btn" href="assets/papers/my_paper.pdf" target="_blank" rel="noopener">View PDF</a>
+          </div>
+        </article>
+        -->
+      </div>
+    </section>
+
+    <section style="margin-top:2rem">
+      <span class="badge">Maintainers</span>
+      <div class="card">
+        <div class="title">Adding a new paper</div>
+        <ol style="margin:.6rem 0 0;padding-left:1.2rem">
+          <li>Put PDFs in <code>/assets/papers/</code> (create this folder if needed).</li>
+          <li>Put HTML reports in <code>/assets/reports/</code> (optional).</li>
+          <li>Duplicate an <code>&lt;article class="card"&gt;</code> block and update title, date, and links.</li>
+          <li>Commit to <code>main</code>; GitHub Pages updates automatically.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2025 Artificial Genius Intelligence • Research Archive</footer>
+</body>
+</html>
