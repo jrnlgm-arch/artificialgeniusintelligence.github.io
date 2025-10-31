@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.artificialgeniusintelligence.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.artificialgeniusintelligence.com/research.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.artificialgeniusintelligence.com/simulation.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.artificialgeniusintelligence.com/whitepaper.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Direct links to PDFs you want indexed -->
+  <url><loc>https://www.artificialgeniusintelligence.com/assets/papers/AGnI_White_Paper.pdf</loc></url>
+  <url><loc>https://www.artificialgeniusintelligence.com/assets/papers/Age_of_Abundance_Post-Labor_World.pdf</loc></url>
+  <url><loc>https://www.artificialgeniusintelligence.com/assets/papers/AGnI_Multi-agent_Collaborative_Protocol.pdf</loc></url>
+</urlset>
