@@ -1,20 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- AGnI site – index.html (clean version) -->
+  <!-- AGnI site – index.html (SEO-upgraded) -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Artificial Genius Intelligence (AGⁿI)</title>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.artificialgeniusintelligence.com/" />
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Artificial Genius Intelligence (AGⁿI): research and whitepapers on post-labor abundance, multi-agent cooperation, AI governance, and energy-bound intelligence." />
+  <meta name="keywords" content="Artificial Genius Intelligence, Genius Intelligence, AGnI, Age of Abundance, post-labor world, multi-agent cooperation, multi-model cooperation, AI governance, energy-bound AI, research whitepapers" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-  <!-- Social preview -->
+  <!-- Social preview (OpenGraph / Twitter) -->
   <meta property="og:title" content="Artificial Genius Intelligence (AGⁿI)" />
   <meta property="og:description" content="A network of slow-clock, energy-efficient specialist machine geniuses measured by Joules per Discovery." />
   <meta property="og:image" content="banner.png" />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.artificialgeniusintelligence.com/" />
   <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- JSON-LD: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Artificial Genius Intelligence (AGⁿI)",
+    "url": "https://www.artificialgeniusintelligence.com/",
+    "inLanguage": "en",
+    "description": "Research and whitepapers on post-labor abundance, AI governance, and multi-agent cooperation.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Artificial Genius Intelligence",
+      "url": "https://www.artificialgeniusintelligence.com/"
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: Organization (add your real X profile if desired) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Artificial Genius Intelligence",
+    "url": "https://www.artificialgeniusintelligence.com/",
+    "sameAs": [
+      "https://x.com/StickmanNews"
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: Highlight flagship whitepaper as a CreativeWork -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "The Age of Abundance — Designing Meaning and Stability in a Post-Labor World",
+    "author": {
+      "@type": "Person",
+      "name": "Joe R. Noles"
+    },
+    "datePublished": "2025-10-30",
+    "inLanguage": "en",
+    "url": "https://www.artificialgeniusintelligence.com/research.html",
+    "keywords": ["Age of Abundance", "post-labor", "governance", "legitimacy", "purpose"],
+    "encoding": [{
+      "@type": "MediaObject",
+      "contentUrl": "https://www.artificialgeniusintelligence.com/assets/papers/Age_of_Abundance_Post-Labor_World.pdf",
+      "encodingFormat": "application/pdf"
+    }]
+  }
+  </script>
 
   <style>
     :root{
@@ -34,15 +95,11 @@
     a{color:var(--teal2); text-decoration:none}
     a:hover{text-decoration:underline}
 
-    /* Header / Hero (kept CSS in case you re-add banner later) */
-    .hero{width:100%; background:#000; display:flex; align-items:center; justify-content:center}
-    .hero img{width:100%; max-width:1920px; height:auto; display:block; border-bottom:2px solid var(--teal2); box-shadow:0 0 20px rgba(69,162,158,.35)}
     .wrap{max-width:1100px; margin:0 auto; padding:2rem 1.25rem}
     .topbar{display:flex; align-items:center; justify-content:space-between; padding:0.75rem 1.25rem; border-bottom:1px solid var(--panel); background:rgba(11,12,16,0.6); backdrop-filter:saturate(120%) blur(4px); position:sticky; top:0; z-index:10}
     .brand{font-weight:700; letter-spacing:.3px; color:var(--teal)}
     .nav a{margin-left:1rem}
 
-    /* Summary panel */
     .agi-summary{
       max-width:850px; margin:2rem auto; padding:2rem;
       background:var(--bg); border:1px solid var(--panel); border-radius:10px;
@@ -55,7 +112,6 @@
     .agi-summary em{color:var(--teal2)}
     .agi-summary ul{margin:1rem 0 1.5rem; padding-left:1.2rem; list-style:disc}
 
-    /* CTA buttons */
     .cta-row{display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1rem}
     .btn{
       display:inline-block; padding:.8rem 1.1rem; border-radius:8px;
@@ -68,10 +124,8 @@
     .btn.primary{background:linear-gradient(135deg, rgba(102,252,241,.12), rgba(69,162,158,.12)); border-color:var(--teal)}
     .btn.primary:hover{background:linear-gradient(135deg, rgba(102,252,241,.18), rgba(69,162,158,.18))}
 
-    /* Footer */
     footer{border-top:1px solid var(--panel); margin-top:2.5rem; padding:2rem 1.25rem; color:var(--muted); text-align:center}
 
-    /* Responsive */
     @media (max-width:640px){
       .agi-summary h1{font-size:1.8rem}
       .agi-summary h2{font-size:1.05rem}
@@ -126,10 +180,9 @@
       <div class="cta-row">
         <a class="btn primary" href="whitepaper.html">Read White Paper</a>
         <a class="btn" href="simulation.html">Launch Simulator</a>
-        <a class="btn" href="research.html">Research & Reports</a>
+        <a class="btn" href="research.html">Research &amp; Reports</a>
         <a class="btn" href="#contact">Get in Touch</a>
       </div>
-
     </section>
 
     <!-- Contact -->
@@ -145,6 +198,8 @@
   </footer>
 </body>
 </html>
+
+
 
 
 
